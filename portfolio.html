@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{%- include head.html -%}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{%- seo -%}
+	<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+	{%- feed_meta -%}
+	<script src="{{ '/assets/javascript/bootstrap/jquery.min.js' | relative_url }}"></script>
+	<script src="{{ '/assets/javascript/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
+</head>
 
 <body>
 
-{%- include header.html -%}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<div class="container">
+		<a class="navbar-brand" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+		{%- assign page_paths = site.header_pages -%}
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				{%- for path in page_paths -%}
+				{%- assign my_page = site.pages | where: "path", path | first -%}
+				{%- if my_page.title -%}
+				<li class="nav-item">
+					<a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+				</li>
+				{%- endif -%}
+				{% endfor -%}
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/meaghan-raleigh-50484848/" target="_blank">LinkedIn</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="mailto:meagraleigh@gmail.com">Email Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="assets/images/Resume.pdf" target="_blank">Resume (PDF)</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 <div class="container-fluid">
 	<div class="card-deck">
@@ -55,7 +98,44 @@
 	</div>
 </div>
 
-{%- include footer.html -%}
+<div class="py-5 border-top">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm">
+				<ul class="list-unstyled">
+					<li>
+						{%- if site.author -%}
+						{{ site.author | escape }}
+						{%- else -%}
+						{{ site.title | escape }}
+						{%- endif -%}
+					</li>
+					{%- if site.email -%}
+					<li>
+						<a href="mailto:{{ site.email }}">
+							{{ site.email }}
+						</a>
+					</li>
+					{%- endif -%}
+					{%- if site.location -%}
+					<li>
+						{{ site.location }}
+					</li>
+					{%- endif -%}
+				</ul>
+			</div>
+
+
+			<div class="col-sm text-right">
+				<p>{{- site.description | escape -}}</p>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
 
 </body>
 
