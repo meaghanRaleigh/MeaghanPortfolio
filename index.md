@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: Meaghan Raleigh Portfolio
 ---
 
