@@ -16,11 +16,10 @@
 title: Meaghan Raleigh
 email: "meagraleigh@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
-location: "Minneapolis, MN"
   A Bootstrap 4 Portfolio
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+location: "Minneapolis, MN"
 repository: "nicolas-van/bootstrap-4-github-pages"
 
 # Build settings
