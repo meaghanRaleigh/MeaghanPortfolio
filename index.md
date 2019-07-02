@@ -3,5 +3,4 @@ layout: page
 title: Meaghan Raleigh Portfolio
 ---
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+[logo]: (https://meaghanraleigh.github.io/meaghanportfolio/images/meaghan.png)
