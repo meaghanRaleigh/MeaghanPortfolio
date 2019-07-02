@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -16,23 +16,16 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 	<div class="container">
-		<a class="navbar-brand" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-
-		{%- assign page_paths = site.header_pages -%}
+		<a class="navbar-brand" rel="author" href="https://meaghanraleigh.github.io/meaghanportfolio">Meaghan Raleigh</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 		        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				{%- for path in page_paths -%}
-				{%- assign my_page = site.pages | where: "path", path | first -%}
-				{%- if my_page.title -%}
 				<li class="nav-item">
-					<a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+					<a class="nav-link" href="https://meaghanraleigh.github.io/meaghanportfolio/">Meaghan Raleigh</a>
 				</li>
-				{%- endif -%}
-				{% endfor -%}
 				<li class="nav-item">
 					<a class="nav-link" href="https://www.linkedin.com/in/meaghan-raleigh-50484848/" target="_blank">LinkedIn</a>
 				</li>
