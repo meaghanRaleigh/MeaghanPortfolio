@@ -17,7 +17,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
 }
 
 .bg-dark {
-  background-color: $dark !important;
+  background-color: $secondary !important;
 }
 
 .border-dark {
@@ -41,7 +41,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
 
   &-link,
   &-link:hover {
-    color: $primary;
+    color: $secondary;
   }
 
   &-link.disabled:hover {
