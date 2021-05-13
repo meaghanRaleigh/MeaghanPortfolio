@@ -10,7 +10,7 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+  border: $card-border-width solid #dee2e6;
   @include border-radius($card-border-radius);
 
   > hr {
@@ -68,7 +68,7 @@
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
-  background-color: $card-cap-bg;
+  background-color: #6c757d;
   border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
