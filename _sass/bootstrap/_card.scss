@@ -287,6 +287,10 @@
       border-radius: 0;
     }
   }
+  .card:last-child{
+      border-bottom-right-radius: calc(.4rem - 1px);
+    border-bottom-left-radius: calc(.4rem - 1px);
+  }
 
   .card:first-of-type {
     border-bottom: 0;
@@ -297,5 +301,6 @@
   .card:last-of-type {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
   }
 }
