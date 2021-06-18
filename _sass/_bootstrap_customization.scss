@@ -344,7 +344,8 @@ h4.dark {
 }
 
  @media (max-width: 600px) {
-   .jumbotron{
-   color: #fff;
+   .jumbotron,   .jumbotron h1, .jumbotron h4{
+    color: #fff;
    }
+
  }
