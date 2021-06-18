@@ -344,12 +344,12 @@ h4.dark {
 }
 
  @media (max-width: 600px) {
-   .jumbotron, .lead{
+   .jumbotron {
     padding: 1rem;
-    font-size: 1rem
    }
-   h1.display-4, .h4Mobile{
+   h1.display-4, .h4Mobile, .lead{
    font-size: 1rem;
+   font-weight: bold;
    }
 
  }
