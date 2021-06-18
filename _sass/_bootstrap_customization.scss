@@ -342,3 +342,9 @@ h4.dark {
   background-size: cover;
   height: 50vh;
 }
+
+ @media (max-width: $max) {
+ .jumbotron{
+ color: #fff;
+ }
+ }
