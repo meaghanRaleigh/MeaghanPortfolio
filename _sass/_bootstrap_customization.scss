@@ -346,9 +346,10 @@ h4.dark {
  @media (max-width: 600px) {
    .jumbotron{
     padding: 1rem;
+    font-size: .5rem
    }
-   .jumbtron h1, .jumbotron h4{
-   font-size: 1rem
+   h1.display-4, .h4Mobile{
+   font-size: 1rem;
    }
 
  }
